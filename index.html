@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>system</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="scripts/script.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="tool-bar">
+      <!-- <span><img src="assets/skull.png" alt=""></span> -->
+      <span class="menu-item">Finder</span>
+      <span class="menu-item">File</span>
+      <span class="menu-item">Edit</span>
+      <span class="menu-item">View</span>
+      <span class="menu-item">Go</span>
+      <span class="menu-item">Window</span>
+      <span class="menu-item">Help</span>
+      <span id="time"></span>
+    </div>
+    <div class="window" id="about-window" contentEditable="true">
+      <div class="window-frame">
+        <span class="exit" onclick="exit()"></span>
+        about.txt
+      </div>
+      <h2 contentEditable="true">Hello World</h2>
+      <p contentEditable="true">My first computer was a used lime green iMac. It meant so much to me.</p>
+    </div>
+    <div class="icon" ondblclick="openWindow()">
+      <img src="assets/txt.png" alt="">
+      about.txt
+    </div>
+    <div class="icon" ondblclick="openWindow()">
+      <img src="assets/file.png" alt="">
+      drips.mp4
+    </div>
+    <div class="window" id="video-window" contentEditable="true">
+      <div class="window-frame">
+        <span class="exit" onclick="exit()"></span>
+        drips.mp4
+      </div>
+    <video width="320" height="240" controls>
+      <source src="assets/drips.mov" type="video/mp4">
+    </video>
+  </div>
+    </div>
+  </body>
+  </html>

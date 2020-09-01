@@ -1,0 +1,90 @@
+@font-face {
+font-family: 'Chicago Plain';
+font-style: normal;
+font-weight: normal;
+src: local('Chicago Plain'), url('../Chicago.woff') format('woff');
+}
+
+body {
+  margin: 30px;
+  padding: 0;
+  background: grey;
+  font-family:'Chicago Plain';
+  font-weight:normal;
+  font-size:20px;
+}
+
+#wrapper {
+  width: 80%;
+  margin: 0 auto;
+  background-image: url('../assets/cats.png');
+  background-repeat: repeat;
+  height: 800px;
+}
+
+#tool-bar {
+  font-size: 12px;
+  height: 16px;
+  width 100%;
+  background: #e0e0e0;
+}
+
+.menu-item:hover {
+  cursor: pointer;
+}
+
+#time {
+  float: right;
+}
+
+span {
+  padding-right: 10px;
+}
+
+div.icon {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+  font-size: 12px;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.window {
+  position: absolute;
+  z-index: 8;
+  background: white;
+  width: 300px;
+
+}
+
+.window-frame {
+  background: pink;
+  width: 100%;
+  font-size: 12px;
+  height: 30px;
+}
+
+.window-frame:hover {
+  cursor: grab;
+}
+
+.exit {
+  margin: 5px;
+  height:2px;
+  width: 2px;
+  border: 1px solid black;
+}
+
+.exit:hover {
+  cursor: pointer;
+}
+
+#about-window {
+  display: none;
+  top: 109px;
+  left: 393px;
+}
