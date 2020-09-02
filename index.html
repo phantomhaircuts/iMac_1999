@@ -21,26 +21,26 @@
     </div>
     <div class="window" id="about-window" contentEditable="true">
       <div class="window-frame">
-        <span class="exit" onclick="exit()"></span>
+        <span class="exit" onclick="aboutExit()"></span>
         about.txt
       </div>
       <h2 contentEditable="true">Hello World</h2>
-      <p contentEditable="true">My first computer was a used lime green iMac. It meant so much to me.</p>
+      <p contentEditable="true">My first computer was a used lime green iMac G3.</p>
     </div>
     <div class="icon" ondblclick="openWindow()">
       <img src="assets/txt.png" alt="">
       about.txt
     </div>
-    <div class="icon" ondblclick="openWindow()">
+    <div class="icon" ondblclick="openVideo()">
       <img src="assets/file.png" alt="">
       drips.mp4
     </div>
     <div class="window" id="video-window" contentEditable="true">
       <div class="window-frame">
-        <span class="exit" onclick="exit()"></span>
+        <span class="exit" onclick="videoExit()"></span>
         drips.mp4
       </div>
-    <video width="320" height="240" controls>
+    <video controls>
       <source src="assets/drips.mov" type="video/mp4">
     </video>
   </div>

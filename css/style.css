@@ -6,7 +6,7 @@ src: local('Chicago Plain'), url('../Chicago.woff') format('woff');
 }
 
 body {
-  margin: 30px;
+  margin: 0;
   padding: 0;
   background: grey;
   font-family:'Chicago Plain';
@@ -15,7 +15,7 @@ body {
 }
 
 #wrapper {
-  width: 80%;
+  /* width: 80%; */
   margin: 0 auto;
   background-image: url('../assets/cats.png');
   background-repeat: repeat;
@@ -24,7 +24,8 @@ body {
 
 #tool-bar {
   font-size: 12px;
-  height: 16px;
+  height: 18px;
+  padding: 10px;
   width 100%;
   background: #e0e0e0;
 }
@@ -66,6 +67,7 @@ div.icon {
   width: 100%;
   font-size: 12px;
   height: 30px;
+  padding-top: 8px;
 }
 
 .window-frame:hover {
@@ -83,8 +85,19 @@ div.icon {
   cursor: pointer;
 }
 
+video {
+  width: 100%;
+}
+
+#video-window {
+  display: none;
+  left: 30px;
+  width: 400px;
+}
+
 #about-window {
   display: none;
   top: 109px;
   left: 393px;
+  font-size: 12px;
 }

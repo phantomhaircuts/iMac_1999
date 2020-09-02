@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   let aboutWin = document.getElementById("about-window");
+  let videoWin = document.getElementById("video-window");
   let startTime = () => {
     let d = new Date();
     let h = d.getHours();
@@ -7,8 +8,14 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('time').innerHTML = h + ":" + m;
   }
 
+//   document.querySelectorAll('.icon').forEach(function(el){
+// el.addEventListener('click', function() {
+//   console.log(document.getElementById(this.id));
+// })});
+
   startTime();
   dragElement(aboutWin);
+  dragElement(videoWin);
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
@@ -56,6 +63,14 @@ function openWindow () {
   document.getElementById("about-window").style.display = "block";
 }
 
-function exit () {
+function openVideo () {
+  document.getElementById("video-window").style.display = "block";
+}
+
+function aboutExit() {
   document.getElementById("about-window").style.display = "none";
+}
+
+function videoExit() {
+  document.getElementById("video-window").style.display = "none";
 }
